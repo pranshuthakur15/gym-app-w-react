@@ -1,0 +1,25 @@
+To Install React Vite with Tailwind follow Steps mentioned in the website: https://tailwindcss.com/docs/guides/vite
+I've added font "Poppins" From website : https://fonts.google.com/
+Also, with that i have added font-awesome libraries from : https://cdnjs.com/libraries/font-awesome
+
+First I created a "Hero" component which is the landing page of the website 
+
+Then i created a "generator" component which has  "SectionWrapper" as its child .
+
+Also this "Generator" component has another function Called Header just to add a 
+Header because i didnt wanted to create a seperate component to write just a 
+heading "Pick your poison" & "Seclect the workout plan you endure".
+
+In section wrapper i have three DIVs
+
+First "Div"  wraps type of potion which gets all the four poison using map function to map them with button
+I've used useState function to paint the screen with click in poison button
+
+
+Second "Div" wraps muscle groups which are different for different poison so on click of posion we set the
+posion variable and then take the muscle group from array of each poison,now because 'individual' posion is
+a array and rest are nested array so ive added a conditional statement such that individual posion is selcted it return
+the array otherwise for rest of the posion it return the key of the nested array ,all the muscle are wrapped under buttons.
+Ive created a function named updateMuscles to let user select more than on muscle at a time if 
+
+ 
